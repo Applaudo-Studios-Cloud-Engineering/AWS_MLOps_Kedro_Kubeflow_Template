@@ -53,6 +53,36 @@ In order to confirm the credentials have been saved after running aws configure.
 
 If you check the contents of the credentials file, you should see the values of the access key ID and secret access key you had created.  
 
+1.4 eksctl installation
+
+eksctl is a simple CLI tool that enables creation of clusters on Amazon Elastic Kubernetes Service (EKS), amazon’s new managed Kubernetes services for EC2. In order to install eksctl we run the commands below.
+
+    brew tap weaveworks/tap
+    brew install weaveworks/tap/eksctl
+
+The brew tap command allows brew to get access to another repository of formulae (online package browser). To confirm the installation, we run the command below
+
+    eksctl version
+    0.83.0
+
+For Linux and Windows users you can find the eksctl installation guide [here](https://github.com/weaveworks/eksctl).
+
+1.5 aws-iam-authenticator installation
+
+Aws-iam-authenticator is a tool that uses AWS IAM credentials to authenticate your Kubernetes cluster. This allows us to use one set of credentials (The ones create in the previous section) for provisioning and updating a created Kubernetes cluster. To install the aws-iam-authenticator, we run:
+
+    brew install aws-iam-authenticator
+
+To test if aws-iam-authenticator works we run and should get:
+
+    aws-iam-authenticator version
+    {"Version":"0.5.3","Commit":"a0516fb9ace571024263424f1770e6d861e65d09"}
+
+For Linux and Windows users you can find the aws-iam-authenticator installation guide [here](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html).
+
+### Creating an EKS Cluster using eksctl.
+
+In order to have Kubeflow up and working, we need to have a kubernetes cluster running in Amazon EKS. We use eksctl to create our clusters, We can create a cluster using other tools EKS Console, or via AWS CloudFormation, Terraform, or the AWS Cloud Development Kit (CDK). Using eksctl is quick and simple and saves us the hustle of changing the context of our local kubectl.
 
 ## Documentation
 

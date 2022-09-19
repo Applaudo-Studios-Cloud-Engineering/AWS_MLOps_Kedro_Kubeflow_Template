@@ -125,7 +125,7 @@ To confirm that the cluster is created, we run the command below
 
 You should have something similar to:
 
-[!Output](https://miro.medium.com/max/700/1*jbxj-j5OrOd3Q2Bd7iidsg.png)
+![Output](https://miro.medium.com/max/700/1*jbxj-j5OrOd3Q2Bd7iidsg.png)
 
 kfctl installation
 
@@ -194,7 +194,7 @@ After all the resources are ready, i.e the above command has run to completion. 
     
 After running the command above you should have all Kubeflow resources listed and divided into their various kubernetes categories e.g pods, services, daemonsets, deployments e.t.c. This should resemble:
 
-[!Kube-Output](https://miro.medium.com/max/700/1*TIsbbJ_ibx5-sU3fDK6WzA.png)
+![Kube-Output](https://miro.medium.com/max/700/1*TIsbbJ_ibx5-sU3fDK6WzA.png)
 
 ### Accessing Kubeflow UI
 
@@ -208,7 +208,7 @@ NOTE: if the above command doesn’t show anything in the address section. We do
 
 Once the page loads, you’ll be prompted for your email address and password (They should match the values you entered earlier) and after that you should have a page similar to:
 
-[!Kube-UI](https://miro.medium.com/max/700/1*S1hRnh432XCsCxxBITtMjg.png)
+![Kube-UI](https://miro.medium.com/max/700/1*S1hRnh432XCsCxxBITtMjg.png)
 ## Documentation
 
 | Tool | Link |
